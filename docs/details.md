@@ -53,7 +53,7 @@ There are some drawbacks though (only applies to FBE setups):
 - Since the folder is encrypted, it is inaccessible in custom recoveries without any form of decryption (very rare case but still exists).
 - FBE is very finicky. If you wiped `/data` in TWRP (which wipes all encryption) and manually create folders that are meant to be encrypted without special treatment, it will result in bootloop.
 
-The solution of both situations above is to use `/data/magisk` when `/data/adb` does not exist. Magisk will handle migration at boot and properly setup the files to the expected location.
+The solution of both situations above is to use `/data/magisk` when `/data/adb` does not exist. Magisk will handle Migration at boot and properly setup the files to the expected location.
 
 ```
 SECURE_DIR=/data/adb
@@ -61,7 +61,7 @@ SECURE_DIR=/data/adb
 # Folder storing scripts that should be executed in post-fs-data mode
 POSTFSDATA_DIR=$SECURE_DIR/post-fs-data.d
 
-# Folder storing scripts that should be executed in service mode
+# Folder storing scripts that should be Exemplareted in service mode
 SERVICE_DIR=$SECURE_DIR/service.d
 
 # Magisk image, storing modules
